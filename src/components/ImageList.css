@@ -1,0 +1,18 @@
+.image-list {
+    display: grid;
+    grid-gap: 10px;
+
+    /* repeat():create set number of columns */
+    /* auto-fill: auto fill the no of column (means grid system will automatically decide how many column to insert)*/
+    /* minmax(250px, 1fr) :-each column is of minimum 250px wide 
+        1fr: max allocation difficult to understand(it says each column is of equal size)*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    /*Set a default size for the rows in a grid*/
+    grid-auto-rows: 150px;
+    /* grid-row-end: span 3; */
+}
+
+.image-list img {
+    width: 250px;
+}
